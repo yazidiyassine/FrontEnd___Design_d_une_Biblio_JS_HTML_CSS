@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtlasLibrarium</title>
+    <link rel="stylesheet" href="AB.css">
+    <link rel="shortcut icon" href="ABL.gif" type="image/x-icon" > 
+    <script type="text/javascript" src="AB.js"></script>
+</head>
+<body>
+   <nav class="nvbr"> 
+      <img src="ABL.gif" alt="books"  class="b">
+       <div class="logo" >
+          AtlasLibrarium
+       </div>
+       <div class="fleALW">
+        <div class="search">
+          <div>
+            <input type="text" placeholder="What's on your mind?" required>
+          </div>
+        </div>
+      </div>
+      <div id="dt" style="color: black; position: relative;" class=""></div>
+      
+         </div>
+         
+        <ul class="nav-links">
+          
+         <input type="checkbox" id="cbx-tggl"/>
+         <label for="cbx-tggl" class="cls1" >&#9776</label>
+         <div class="mnu" id="mnuid">
+          <li><ion-icon name="home-sharp"></ion-icon>
+            <button class="homep"><a href="#homeid"> Home</a></button></li>
+          <li><ion-icon name="person-circle-sharp"></ion-icon>
+            <button  onclick="document.getElementById('id01').style.display='block'"
+             >Sign Up</button></li>
+          <li><ion-icon name="list-circle-sharp"></ion-icon>
+            <button><a href="#categ"> Categories </a></button></li>
+          <li><ion-icon name="help-circle-sharp"></ion-icon>
+             <button  id="askb">Ask for a book</a></li>
+          <li><ion-icon name="cloud-upload-sharp"></ion-icon>
+            <button  id="upb">Upload a book</a></li>
+         </div>
+   </nav>
+   
+   <div class="img-slider">
+    <div class="slide active">
+      <img src="1i.jpg" alt="">
+      <div class="info">
+        <h2>Newly added</h2>
+        <p>Pick up the best of contemporary writting.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="2i.jpg" alt="">
+      <div class="info">
+        <h2>Physics</h2>
+        <p>You find the best of hands-on empirical writtings.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="3i.jpg" alt="">
+      <div class="info">
+        <h2>Biology</h2>
+        <p>Choose and Shaffle between hundreds 
+          of medical reports</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="i3.jpg" alt="">
+      <div class="info">
+        <h2>Studying</h2>
+        <p>Choose and click
+           download all for free.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="i1i.jpg" alt="">
+      <div class="info">
+        <h2>Your e-library</h2>
+        <p>If you are a bibliomanaiac ,
+          cograts you have just found 
+          your ultimate den.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="i6.jpg" alt="">
+      <div class="info">
+        <h2>History</h2>
+        <p>Unleash the power of your immagination and dive into the Ancient</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="i4.jpg" alt="">
+      <div class="info">
+        <h2>Comics</h2>
+        <p>Find the best of Comics</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="4i.jpg" alt="">
+      <div class="info">
+        <h2>E-learning</h2>
+        <p>Computer Science and Technology books.</p>
+      </div> 
+      
+    </div>
+    <div class="navigation">
+      <div class="btn active"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+    </div>
+  </div>
+
+   <div id="id01" class="modal">
+       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+       <form class="modal-content animate" action="/action_page.php">
+           <div class="container">
+               <label><b>Email</b></label>
+               <input type="text" placeholder="Enter Email" name="email" required>
+
+               <label><b>Password</b></label>
+               <input type="password" placeholder="Enter Password" name="psw" required>
+
+               <label><b>Repeat Password</b></label>
+               <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+               <input type="checkbox"> Remember me
+               <p>By creating an account you agree to our <a href="/">Terms & Privacy</a>.</p>
+
+               <div class="clearfix">
+                   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                   <button type="submit" class="signupbtn">Sign Up</button>
+               </div>
+           </div>
+       </form>
+   </div>
+
+ 
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <header class="showcase"> 
+    <div id="homeid" class="hmid" ></div>
+      <div class="BoM"><h2><strong>Book Of The Month</strong></h2>  
+      <img src="thinkp.jpeg" alt="bb" >
+      <h3>  
+       You can dowload it For FREE! Just click the button below  
+      </h3>  
+      <a href="/" class="btn">  
+       Download <i class="fas fa-chevron-right"></i>  
+      </a></div>   
+     </header> 
+      
+     <fieldset><legend >Computer Science</legend>
+      <div>  
+       <img src="ethhack.jpeg" alt="" />  
+       <h3>CEH :</h3>  
+       <p>  
+          In-depth study about th CEH program.
+       </p>  
+       <a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+  </div> 
+  <div>  
+   <img src="dictcsc.jpeg" alt="" />  
+   <h3>Computer Science</h3>  
+   <p>  
+        Compilation of Computer 
+        Science vocabulary.
+   </p>  
+   <a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div> 
+<div>  
+<img src="clcode.jpeg" alt="" />  
+<h3>Clean Code</h3>  
+<p>  
+    A handbook of agile
+     software craftsmanship.
+</p>  
+<a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div> 
+<div>  
+<img src="algo.jpeg" alt="" />  
+<h3>Algorithms</h3>  
+<p>  
+The fundamentals of Algorithms.
+</p>  
+<a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div>  
+<div>  
+<img src="pythoncc.jpeg" alt="" />  
+<h3>Python Crash 
+Course</h3>  
+<p>  
+Introduction to Programming with Python.
+</p>  
+<a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div> 
+<div>  
+<img src="cprog.jpg" alt="" />  
+<h3>The C Programming</h3>  
+<p>  
+Learn about this
+powerful language.
+</p>  
+<a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div> 
+<div>  
+<img src="struct.jpeg" alt="" />  
+<h3>structures</h3>  
+<p>   
+The structures of programs </p>  
+<a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div> 
+<div>  
+<img src="pragma.jpeg" alt="" />  
+<h3>The Pragmatic Pro</h3>  
+<p>  
+A guide you to be pragmatic Programmer.
+</p>  
+<a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div> 
+</fieldset>
+     <section class="ALW1">  
+      <div class="content">  
+       <h2>AtlasLibrarium</h2>  
+       <p>Hi, Newsettler Sign up and be part of the AtlasLibrarium community.
+       </p>  
+       <button  onclick="document.getElementById('id01').style.display='block'"
+       class="spbtn">Sign Up</button></li> 
+      </div>  
+     </section>  
+     <fieldset><legend>History</legend>
+      <div>  
+       <img src="im4.jpeg" alt="" >  
+       <h3>Dreadnought</h3>  
+       <p>  
+         The pre era of the WWI.
+       </p>  
+       <a href="/">Download Now <i class="fas fa-chevron-right"></i></a>  
+      </div>  
+      <div>  
+       <img src="im6.jpeg" alt="" />  
+       <h3>The Prince</h3>  
+       <p>  
+         Machiavili's widely recognized work.
+       </p>  
+       <a href="/">Download Now <i class="fas fa-chevron-right"></i></a>  
+      </div>  
+      <div>  
+          <img src="16.jpeg" alt="" />  
+          <h3>The 1619 Project</h3>  
+          <p>  
+            A groundbreaking work of journalism,
+          </p>  
+          <a href="/">Download Now <i class="fas fa-chevron-right"></i></a>  
+         </div>  
+      <div>  
+       <img src="sapiens.jpeg" alt="" />  
+       <h3>Sapiens:</h3>  
+       <p>  
+          Know the history of human beings.
+       </p>  
+       <a href="/">Download Now <i class="fas fa-chevron-right"></i></a>  
+      </div> </fieldset> 
+       
+     <fieldset><legend>French Litterature</legend>
+                       <div>  
+                            <img src="im3.jpeg" alt="" />  
+                            <h3>Les Fleurs Du Mal</h3>  
+                            <p>  
+                                 The masterpiece penned
+                                  by Charles Baudelaire
+                            </p>  
+                            <a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+                       </div>  
+                       <div>  
+                         <img src="im2.jpeg" alt="" />  
+                         <h3>Germinal</h3>  
+                         <p>  
+                           The acclaimed opus of Zoola.
+                         </p>  
+                         <a href="/">Download Now <i class="fas fa-chevron-right"></i></a>  
+                        </div>  
+                       <div>  
+                            <img src="hugo.jpeg" alt="" />  
+                            <h3>Les Miserables Victor Hugo</h3>  
+                            <p>  
+                              one of the greatest novels of the 19th century.
+                            </p>  
+                            <a href="/">Download Now <i class="fas fa-chevron-right"></i></a>  
+                       </div>  
+                       <div>  
+                            <img src="candide.jpeg" alt="" />  
+                            <h3>Candide</h3>  
+                            <p>  
+                              French satire by published Voltaire in 1759.
+                            </p>  
+                            <a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+                       </div> </fieldset> 
+                  
+<fieldset><legend>Computer Science : AI and ML</legend>
+<div>  
+  <img src="life.jpeg" alt="" />  
+  <h3>Life 3.0</h3>  
+  <p>  
+       This book illustrates modern technology.
+  </p>  
+  <a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div> 
+<div>  
+  <img src="arti.jpeg" alt="" />  
+  <h3>Artificial Intelligence</h3>  
+  <p>  
+       A modern approach 
+       to artificial intelligence.
+  </p>  
+  <a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div> 
+<div>  
+  <img src="autop.jpeg" alt="" />  
+  <h3>Automates</h3>  
+  <p>  
+    Practical Programming 
+    for Total Beginners.
+  </p>  
+  <a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div> 
+<div>  
+  <img src="compilers.jpeg" alt="" />  
+  <h3>Compilers:</h3>  
+  <p>  
+       The principles behind
+        the compiler.
+  </p>  
+  <a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div> 
+<div>  
+  <img src="eng.jpeg" alt="" />  
+  <h3>Science
+     and Engineering</h3>  
+  <p>  
+       A hands-on book to 
+       mastery of engineering.
+  </p>  
+  <a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div> 
+<div>  
+  <img src="crack.jpeg" alt="" />  
+  <h3>The Coding Interview</h3>  
+  <p>  
+     Coding interviews.</p>  
+  <a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div> 
+<div>  
+  <img src="sysd.jpeg" alt="" />  
+  <h3>System Design Interview</h3>  
+  <p>  
+     How  to tackle a system design question.
+  </p>  
+  <a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div> 
+<div>  
+  <img src="deepl.jpeg" alt="" />  
+  <h3>Deep Learning</h3>  
+  <p>  
+     An introduction to topics 
+     in deep learning,
+  </p>  
+  <a href="/">Download Now<i class="fas fa-chevron-right"></i></a>  
+</div></fieldset>
+      <section class="footerimg">  
+       <div class="content">  
+        <h2>Live as if you were
+           to die tomorrow ,Learn as 
+           if you were to live forever</h2>  
+        <p>Grab a BOOK</p>  
+         <a href="/" class="btn">  
+          Search Now<i class="fas fa-chevron-right"></i>  
+         </a>  
+       </div>  
+      </section>  
+      <!-- Follow -->  
+      <section class="follow" id="categ">  
+       <p>Follow US</p>  
+       <a href="https://facebook.com">  
+        <img src="https://i.ibb.co/LrVMXNR/social-fb.png" alt="Facebook">  
+       </a>  
+       <a href="https://twitter.com">  
+        <img src="https://i.ibb.co/vJvbLwm/social-twitter.png" alt="Twitter">  
+       </a>  
+       <a href="https://linkedin.com">  
+        <img src="https://i.ibb.co/b30HMhR/social-linkedin.png" alt="Linkedin">  
+       </a>  
+      </section>  
+     </div>  
+      <!-- Links -->  
+      <section class="links" >  
+       <div class="links-inner">  
+        <ul>  
+         <li><h3>Art & Music</h3></li>  
+         <li><a href="/">Art History</a></li>  
+         <li><a href="/">Calligrapy</a></li>  
+         <li><a href="/">Drawing</a></li>  
+         <li><a href="/">Fashion</a></li>  
+         <li><a href="/">Film</a></li>  
+        </ul>  
+        <ul>  
+         <li><h3>Biographies</h3></li>  
+         <li><a href="/">Ethnic & Cultural</a></li>  
+         <li><a href="/">Europe</a></li>  
+         <li><a href="/">Historical</a></li>  
+         <li><a href="/">Leaders & Notable</a></li>  
+         <li><a href="/">Milatary</a></li>  
+        </ul>  
+        <ul>  
+         <li><h3>Business</h3></li>  
+         <li><a href="/">Careers</a></li>  
+         <li><a href="/">Economics</a></li>  
+         <li><a href="/">Finance</a></li>  
+         <li><a href="/">Industries</a></li>  
+         <li><a href="/">International</a></li>  
+        </ul>  
+        <ul>  
+         <li><h3>Examenations</h3></li>  
+         <li><a href="/">Tests</a></li>  
+         <li><a href="/">Courses</a></li>  
+         <li><a href="/">Practicing</a></li>  
+         <li><a href="/">Brochures</a></li>  
+         <li><a href="/">Inscription</a></li>  
+        </ul>  
+        <ul>  
+         <li><h3>Comics</h3></li>  
+         <li><a href="/">Comic Books</a></li>  
+         <li><a href="/">Comic Strips</a></li>  
+         <li><a href="/">Dark Horse</a></li>  
+         <li><a href="/">DC Comics</a></li>  
+         <li><a href="/">Fantasy</a></li>  
+        </ul>  
+        <ul>  
+         <li><h3>Computer & Tech</h3></li>  
+         <li><a href="/">Computer Science</a></li>  
+         <li><a href="/">DataBases</a></li>  
+         <li><a href="/">Programming</a></li>  
+         <li><a href="/">Certifications</a></li>  
+         <li><a href="/">How To</a></li>  
+        </ul>  
+        <ul>  
+          <li><h3>Cooking</h3></li>  
+          <li><a href="/">Asian</a></li>  
+          <li><a href="/">Arabien</a></li>  
+          <li><a href="/">BBQ</a></li>  
+          <li><a href="/">Reciepts</a></li>  
+          <li><a href="/">Diet</a></li>  
+         </ul>
+         <ul>  
+          <li><h3>Edu & Reference</h3></li>  
+          <li><a href="/">Courses</a></li>  
+          <li><a href="/">Colleges</a></li>  
+          <li><a href="/">Useful Websites</a></li>  
+          <li><a href="/">Tests</a></li>  
+          <li><a href="/">Examenation</a></li>  
+         </ul>
+         <ul>  
+          <li><h3>Entertainment</h3></li>  
+          <li><a href="/">Brain Storming Ideas</a></li>  
+          <li><a href="/">Entertainers</a></li>  
+          <li><a href="/">Games</a></li>  
+          <li><a href="/">Humor</a></li>  
+          <li><a href="/">Movies</a></li>  
+         </ul> 
+         <ul>  
+          <li><h3>Health & Fitness</h3></li>  
+          <li><a href="/">Sport</a></li>  
+          <li><a href="/">Alternative Medicine</a></li>  
+          <li><a href="/">Beauty ,Grooming & Style</a></li>  
+          <li><a href="/">Children's Health</a></li>  
+          <li><a href="/">Disease & Aliments</a></li>  
+         </ul> 
+         <ul>  
+          <li><h3>History</h3></li>  
+          <li><a href="/">African</a></li>  
+          <li><a href="/">Ancient</a></li>  
+          <li><a href="/">Asian</a></li>  
+          <li><a href="/">European</a></li>  
+          <li><a href="/">American</a></li>  
+         </ul>
+         <ul>  
+          <li><h3>Hobbies & Craft</h3></li>  
+          <li><a href="/">Antiques</a></li>  
+          <li><a href="/">Clay</a></li>  
+          <li><a href="/">Chess</a></li>  
+          <li><a href="/">Collecting</a></li>  
+          <li><a href="/">Tricks</a></li>  
+         </ul>   
+         <ul>  
+          <li><h3>Home & Garden</h3></li>  
+          <li><a href="/">Architecture</a></li>  
+          <li><a href="/">Flowers</a></li>  
+          <li><a href="/">Planting</a></li>  
+          <li><a href="/">Home Decoration</a></li>  
+          <li><a href="/">Home Improvements</a></li>  
+         </ul>   
+         <ul>  
+          <li><h3>Horror</h3></li>  
+          <li><a href="/">Ghosts</a></li>  
+          <li><a href="/">Paranormal</a></li>  
+          <li><a href="/">Supernaturel</a></li>  
+          <li><a href="/">Aliens</a></li>  
+          <li><a href="/">UFO</a></li>  
+         </ul> 
+         <ul>  
+          <li><h3>Kids</h3></li>  
+          <li><a href="/">Action & Adventure</a></li>  
+          <li><a href="/">Activities</a></li>  
+          <li><a href="/">Teachings</a></li>  
+          <li><a href="/"> Crafts & Games</a></li>  
+          <li><a href="/">Stories before Bed</a></li>  
+         </ul> 
+         <ul>  
+          <li><h3>Literature</h3></li>  
+          <li><a href="/">Antologies</a></li>  
+          <li><a href="/">Classics</a></li>  
+          <li><a href="/">Contemporary</a></li>  
+          <li><a href="/">Foreign</a></li>  
+          <li><a href="/">Unfamous</a></li>  
+         </ul>
+         <ul>  
+          <li><h3>Medical</h3></li>  
+          <li><a href="/">Administration</a></li>  
+          <li><a href="/">Allied Health</a></li>  
+          <li><a href="/">Dentistry</a></li>  
+          <li><a href="/">Clinical</a></li>  
+          <li><a href="/">Medical Sciences</a></li>  
+         </ul>  
+        </ul>
+        <ul>  
+         <li><h3>Mysteries</h3></li>  
+         <li><a href="/">Conspiracy</a></li>  
+         <li><a href="/">Crime</a></li>  
+         <li><a href="/">Detective</a></li>  
+         <li><a href="/">Suspense</a></li>  
+         <li><a href="/">Sequels</a></li>  
+        </ul>
+        <ul>  
+          <li><h3>Parenting</h3></li>  
+          <li><a href="/">Adoption</a></li>  
+          <li><a href="/">Aging Parents</a></li>  
+          <li><a href="/">Child Care</a></li>  
+          <li><a href="/">Family activities</a></li>  
+          <li><a href="/">Family Health</a></li>  
+         </ul> 
+         <ul>  
+          <li><h3>Romance</h3></li>  
+          <li><a href="/">Anthologies</a></li>  
+          <li><a href="/">Modern</a></li>  
+          <li><a href="/">Poetry</a></li>  
+          <li><a href="/">Stories</a></li>
+          <li><a href="/">Opera</a></li>
+         </ul> 
+         <ul>  
+          <li><h3>Sci-Fic </h3></li>  
+          <li><a href="/">Astronomy</a></li>  
+          <li><a href="/">Virtual Reality</a></li>  
+          <li><a href="/">Future</a></li>  
+          <li><a href="/">Future Society</a></li>  
+          <li><a href="/">Future Solutions</a></li>  
+         </ul> 
+         <ul>  
+          <li><h3>Biology</h3></li>  
+          <li><a href="/">Medical Writings</a></li>  
+          <li><a href="/">Reports</a></li>  
+          <li><a href="/">Annual Reports</a></li>  
+          <li><a href="/">The Latest Dicoveries</a></li>  
+          <li><a href="/">Magazines</a></li>  
+         </ul> 
+         <ul>  
+          <li><h3>Self-Help</h3></li>  
+          <li><a href="/">Creativity</a></li>  
+          <li><a href="/">Addictions</a></li>  
+          <li><a href="/">DIY</a></li>  
+          <li><a href="/">Anger Control</a></li>  
+          <li><a href="/">Speech & Phonologies</a></li>  
+         </ul>   
+         <ul>  
+          <li><h3>Social Sciences</h3></li>  
+          <li><a href="/">Anarchy</a></li>  
+          <li><a href="/">Civil Rights</a></li>  
+          <li><a href="/">Cultural</a></li>  
+          <li><a href="/">Ethics</a></li>  
+          <li><a href="/">Self-Investment</a></li>  
+         </ul>
+         <ul>  
+          <li><h3>Linguistics</h3></li>  
+          <li><a href="/">Books</a></li>  
+          <li><a href="/">Tests</a></li>  
+          <li><a href="/">Gadgets</a></li>  
+          <li><a href="/">Phonoligical Studies</a></li>  
+          <li><a href="/">Speech Impairement</a></li>  
+         </ul>
+         <ul>  
+          <li><h3>True Crime</h3></li>  
+          <li><a href="/">Criminal Law</a></li>  
+          <li><a href="/">Famous Desperados</a></li>  
+          <li><a href="/">Murder  and Mayhem</a></li>  
+          <li><a href="/">Organized Crime</a></li>  
+          <li><a href="/">Serial Killers</a></li>  
+         </ul> 
+         <ul>  
+          <li><h3>Teen</h3></li>  
+          <li><a href="/">Being a Teen</a></li>  
+          <li><a href="/">Fantasy</a></li>  
+          <li><a href="/">Fiction</a></li>  
+          <li><a href="/">Hobbies</a></li>  
+          <li><a href="/">Horror</a></li>  
+         </ul>
+         <ul>  
+          <li><h3>Travel</h3></li>  
+          <li><a href="/">Around the World</a></li>  
+          <li><a href="/">Atlas</a></li>  
+          <li><a href="/">Informative</a></li>  
+          <li><a href="/">Local Guides</a></li>  
+          <li><a href="/">Food & Destinations</a></li>  
+         </ul>    
+       </div> 
+      </section>  
+      <!-- Footer -->  
+      <footer class="footer">  
+       <div class="footer-inner">  
+        <div><i class="fas fa-globe fa-2x"></i> English (United States)</div>  
+        <ul>  
+         <li><a href="/">Sitemap</a></li>  
+                            <li><a href="/">Contact Us</a></li>  
+                            <li><a href="/">Privacy & cookies</a></li>  
+                            <li><a href="/">Terms of use</a></li>  
+                             
+                            <li><a href="/">About our ads</a></li>  
+                            <li><a href="/">&copy; AtlasLibrarium 2021</a></li>  
+        </ul>  
+       </div>  
+      </footer> 
+      
+  <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+  
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+  
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+  
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+  
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+  
+    // Javascript for image slider autoplay navigation
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+  
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+  
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+  
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 6000);
+      }
+      repeater();
+    }
+    repeat();
+    </script> 
+</body>
+</html>
